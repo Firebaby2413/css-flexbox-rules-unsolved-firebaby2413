@@ -11,7 +11,9 @@ body {
 }
 
 .content {
+  display: flex;
   padding: 30px;
+  gap: 30px;
 }
 
 h2 {
@@ -25,6 +27,8 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #a9a9a9;
   padding: 20px;
 }
@@ -36,7 +40,45 @@ form {
 
 #sign-in,
 #sign-up {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  gap: 30px;
+}
+
+#sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+}
+
+.form-checkbox-control {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.sign-in-option {
+  display: normal;
+}
+
+#sign-in-form .form-submit-control {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+}
+
+.forgot {
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -46,6 +88,8 @@ a {
 
 label {
   font-weight: bold;
+  padding: 6px;
+  gap: 6px;
 }
 
 input {
@@ -83,3 +127,71 @@ input[type="submit"]:hover {
 .form select {
   height: 30px;
 }
+
+.sign-in-option label{
+  font-weight: normal;
+}
+
+.form-submit-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding: 6px;
+}
+
+.form-group-horizontal-control .form-input-control #state {
+  width: 450px;
+  height: 30px;
+}
+
+.form-group-horizontal-control .form-input-control #city {
+  width: 450px;
+  height: 30px;
+}
+
+.gender {
+  padding-top: 30px;
+}
+
+.form-group-vertical-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 6px;
+}
+
+.form-group-vertical-control .form-radio-control {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px;
+} 
+
+.form-group-vertical-control .form-radio-control label {
+  font-weight: normal;
+}
+
+.forgot {
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
