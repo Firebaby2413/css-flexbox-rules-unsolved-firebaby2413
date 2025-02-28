@@ -59,6 +59,8 @@ section {
 }
 
 .search-bar {
+  display: flex;
+  align-items: center;
   width: 400px;
   background: #1f1f27;
   padding: 10px 20px;
@@ -156,6 +158,8 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .products {
